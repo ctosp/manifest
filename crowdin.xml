@@ -6,8 +6,8 @@
           revision="pie"
           review="gerrit.pixelexperience.org" />
 
-  <remote name="pixel-devices"
-          fetch="https://github.com/PixelExperience-Devices"
+  <remote name="ctosp-devices"
+          fetch="https://github.com/ctosp-Devices"
           revision="pie" />
 
   <remote name="github"

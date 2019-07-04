@@ -1,72 +1,53 @@
-# Pixel Experience #
+------------------------------------------
+     
+<p align="center">
+ <img src="https://github.com/ctosp/manifest/blob/pie/Logo.png" > 
+</p>
 
-### Sync ###
+------------------------------------------
 
-```bash
+------------------------------------------
+# CTos-p #
+------------------------------------------
 
-# Initialize local repository
-repo init -u https://github.com/PixelExperience/manifest -b pie
+To get started with the building process, you'll need to get familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
 
-# Sync
-repo sync -c -jx --force-sync --no-clone-bundle --no-tags
-```
 
-### Build ###
-
-```bash
-
-# Set up environment
-$ . build/envsetup.sh
-
-# Choose a target
-$ lunch aosp_$device-userdebug
-
-# Build the code
-$ mka bacon -jX
-```
-
-### Submitting Patches ###
-
-Patches are always welcome!  Please submit your patches to our Gerrit.
-
-To start contributing, just register at https://gerrit.pixelexperience.org
-
-Open up terminal to create your ssh keys required for submitting patches to gerrit and type in:
+# To initialize your local repository, use a command like this:-
 
 ```bash
-git config --global review.gerrit.pixelexperience.org.username <username you registered with>
-
-git config --global review.gerrit.pixelexperience.org.email <your email you registered with>
-
-ssh-keygen -t rsa -C "your@email.com"
+repo init -u git://github.com/ctosp/manifest.git -b pie
 ```
 
-In our gerrit click on your "Avatar" on the top right, then on "Settings".
+# To initialize a shallow clone, which will save even more space, use a command like this:-
 
-While in 'Settings' Click on "SSH Public Keys" on the left hand side and then on "Add Key".
-
-Now on your computer navigate to your home "~/.ssh" and open up "id_rsa.pub", copy/paste the context to "Gerrit SSH Public Keys".
-
-You can send patches to us by using these commands in terminal:
-
-```
-    (From root android directory)
-    . build/envsetup.sh
-    (Go to repo you are patching, make your changes and commit)
-    pixelgerrit push pie
-
-    or
-
-    git push ssh://<username>@gerrit.pixelexperience.org:29418/<project> HEAD:refs/for/<branch>
+```bash
+repo init --depth=1 -u git://github.com/ctosp/manifest.git -b pie
 ```
 
-* `<username>` - Your Gerrit username (which can be seen/set [here](https://gerrit.pixelexperience.org/#/settings/))
-* `<project>` - The git repo you are pushing to; all options can be viewed at [this link](https://gerrit.pixelexperience.org/#/admin/projects/)
-* `<branch>` - The git branch your change is based on; for projects using this manifest, it is `pie`
+# Then to sync up:- 
 
-Make your changes and commit with a detailed message, starting with what you are working with
-Commit your patches in a single commit. Squash multiple commits using this command: `git rebase -i HEAD~<# of commits>`
+```bash
+repo sync -c -j16 --force-sync --no-clone-bundle --no-tags
+```
 
-For more help, use this commands: `pixelgerrit help` or `pixelrebase help`
+# Start the build:-
 
-[View Code Review](https://gerrit.pixelexperience.org/)
+```bash
+. build/envsetup.sh
+lunch ctosp_<devicecodename>-userdebug
+mka bacon -jx
+ ```
+---------------------------------------
+
+Credits:
+=======
+ * [**AOSP**](https://android.googlesource.com)
+ * [**PixelExperience**](https://github.com/PixelExperience)
+ 
+----------------------------------------------
+
+Stay tune to Telegram
+
+* CTOSP Group Public : [**@Ctosp**](https://t.me/CTOSP)
+* CTOSP-Announcement : [**@ctosp_feed**](https://t.me/ctosp_feed)
