@@ -92,7 +92,7 @@
   <project path="packages/apps/CTextras" name="packages_apps_CTextras" remote="ctosp" />
   <project path="packages/apps/Snap" name="packages_apps_Snap" remote="ctosp" />
   <project path="packages/apps/Traceur" name="packages_apps_Traceur" remote="ctosp" />
-  <project path="packages/apps/Updates" name="packages_apps_Updates" remote="ctosp" />
+  <project path="packages/apps/CtospOTA" name="packages_apps_CtospOTA" remote="ctosp" />
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="ctosp" />
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="ctosp" />
   <project path="packages/services/BuiltInPrintService" name="packages_services_BuiltInPrintService" remote="ctosp" />
