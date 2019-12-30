@@ -89,7 +89,7 @@
   <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="ctosp" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="ctosp" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="ctosp" />
-  <project path="packages/apps/CTextras" name="packages_apps_CTextras" remote="ctosp" />
+  <project path="packages/apps/Ctosp" name="packages_apps_Ctosp" remote="ctosp" />
   <project path="packages/apps/Snap" name="packages_apps_Snap" remote="ctosp" />
   <project path="packages/apps/Traceur" name="packages_apps_Traceur" remote="ctosp" />
   <project path="packages/apps/CtospOTA" name="packages_apps_CtospOTA" remote="ctosp" />
