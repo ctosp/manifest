@@ -28,7 +28,7 @@ repo init --depth=1 -u git://github.com/ctosp/manifest.git -b ten
 # Then to sync up:- 
 
 ```bash
-repo sync -c -j16 --force-sync --no-clone-bundle --no-tags
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 
 # Start the build:-
